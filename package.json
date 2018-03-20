@@ -1,0 +1,18 @@
+{
+  "name": "bn-music",
+  "version": "1.0.0",
+  "description": "Personal website for Portland pianist Brandon Nelson",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "piano",
+    "keys",
+    "brandon",
+    "nelson",
+    "jazz"
+  ],
+  "author": "sam wellander",
+  "license": "ISC"
+}
