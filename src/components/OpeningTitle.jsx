@@ -1,13 +1,14 @@
 import React from 'react';
+import Button from './Button';
+
 
 function OpeningTitle() {
     var styles = {
         margin: "auto",
-        gridColumnStart: "1",
+        gridColumnStart: "3",
         gridRowStart: "2",
         fontSize: "1.6em",
-        marginRight: "10vw",
-        paddingTop: "20vh"
+        marginRight: "6vw"
     }
     return (
         <div style={styles}>
@@ -15,7 +16,11 @@ function OpeningTitle() {
                 <h1>BRANDON NELSON</h1>
             </div>
             <div>
-               <p>Enter | Performances | Social Media</p>
+                <Button to='/home' text="Enter" />
+                <Button to='/home' text='Performances' />
+            </div>
+            <div>
+                <Social/>
             </div>
             
         </div>
