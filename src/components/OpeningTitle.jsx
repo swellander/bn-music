@@ -1,15 +1,16 @@
 import React from 'react';
 import Button from './Button';
+import Social from './Social';
 
 
 function OpeningTitle() {
     var styles = {
-        margin: "auto",
-        gridColumnStart: "3",
-        gridRowStart: "2",
-        fontSize: "1.6em",
-        marginRight: "6vw"
-    }
+        margin: 'auto',
+        gridColumnStart: '3',
+        gridRowStart: '2',
+        fontSize: '1.6em',
+        marginRight: '6vw'
+    };
     return (
         <div style={styles}>
             <div>
