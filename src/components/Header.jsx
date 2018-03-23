@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     var navStyles = {
-        backgroundColor: 'rgba(0,0,0,0)',
         boxShadow: '0 !important',
         webkitBoxShadow: '0 !important'
     };
@@ -16,6 +15,8 @@ function Header() {
                         <li><a href="sass.html">Home</a></li>
                         <li><a href="badges.html">Music</a></li>
                         <li><a href="collapsible.html">About</a></li>
+                        <li><Link to='/gigs'>Gigs</Link></li>
+
                     </ul>
                 </div>
             </nav>

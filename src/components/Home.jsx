@@ -7,10 +7,11 @@ import { Parallax } from 'react-materialize';
 
 function Home() {
     var styles = {
-        backgroundSize: "cover"
-    }
+        backgroundSize: 'cover'
+    };
     return (
         <div style={styles}>
+            <Header />
             <Parallax imageSrc={HomePhoto}/>
             <Content />
             <Parallax imageSrc="http://materializecss.com/images/parallax2.jpg"/>
