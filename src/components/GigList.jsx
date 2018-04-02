@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Gig from './Gig';
+import Header from './Header';
 
 function GigList(props) {
+
     return (
         <div>
+            <Header />
             <h1>Upcoming Gigs</h1>
             <p>This part should only be visible to admin (Brandon)</p>
             <button onClick={props.onNewGigRequest}>Create A New Gig</button>
@@ -12,7 +15,8 @@ function GigList(props) {
             {props.gigList.map((gig) => 
                 <Gig location={gig.location}
                     name={gig.name}
-                    key={gig.id} />
+                    key={gig.id} 
+                    id={gig.id}/>
             )}
         </div>
     );

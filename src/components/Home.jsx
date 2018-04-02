@@ -2,7 +2,8 @@ import React from 'react';
 import Header from './Header';
 import HomePhoto from './../assets/images/home.jpg';
 import Content from './Content';
-import { Parallax } from 'react-materialize';
+require('./../assets/js/main.js');
+
 
 
 function Home() {
@@ -12,9 +13,12 @@ function Home() {
     return (
         <div style={styles}>
             <Header />
-            <Parallax imageSrc={HomePhoto}/>
+            <div className="parallax-container">
+                <div className="parallax">
+                    <img src={HomePhoto}></img>
+                </div>
+            </div>
             <Content />
-            <Parallax imageSrc="http://materializecss.com/images/parallax2.jpg"/>
         </div>
     );
 }

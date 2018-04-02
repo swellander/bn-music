@@ -1,4 +1,5 @@
 import React from 'react';
+import SoundCloud from './SoundCloud';
 
 function Content() {
     var styles = {
@@ -7,9 +8,7 @@ function Content() {
     };
     return (
         <div style={styles}>
-            <h1>
-                This is the content
-            </h1>
+            <SoundCloud />
         </div>
         
     );

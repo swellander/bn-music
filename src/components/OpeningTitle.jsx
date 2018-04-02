@@ -18,7 +18,7 @@ function OpeningTitle() {
             </div>
             <div>
                 <Button to='/home' text="Enter" />
-                <Button to='/home' text='Performances' />
+                <Button to='/gigs' text='Performances' />
             </div>
             <div>
                 <Social/>

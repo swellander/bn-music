@@ -8,7 +8,7 @@ function Button(props) {
         marginRight: '1em'
     };
     return (
-        <Link style={styles} to='/home' className="waves-effect waves-light btn">
+        <Link style={styles} to={props.to} className="waves-effect waves-light btn">
             {props.text}
         </Link>
     );
