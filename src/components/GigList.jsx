@@ -9,22 +9,26 @@ function GigList(props) {
         <div>
             <Header />
             <h1>Upcoming Gigs</h1>
-            <p>This part should only be visible to admin (Brandon)</p>
-            <button onClick={props.onNewGigRequest}>Create A New Gig</button>
             <hr/>
-            {props.gigList.map((gig) => 
-                <Gig location={gig.location}
+            <br/>
+            <br/>
+            <br/>
+            {Object.keys(props.gigList).map(function(gigId) {
+                let gig = props.gigList[gigId];
+                return <Gig 
+                    onGigDetail={props.onGigDetail}
+                    location={gig.location}
                     name={gig.name}
-                    key={gig.id} 
-                    id={gig.id}/>
-            )}
+                    key={gigId} 
+                    id={gigId}/>
+            })}
         </div>
     );
 }
 
 GigList.propTypes = {
     onNewGigRequest: PropTypes.func,
-    gigList: PropTypes.array
+    gigList: PropTypes.object
 };
 
 export default GigList;

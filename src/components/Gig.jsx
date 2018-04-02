@@ -3,12 +3,8 @@ import PropTypes from 'prop-types';
 
 function Gig(props) {
 
-    function onGigSelection(id) {
-        console.log(id);
-    }
-
     return (
-        <div onClick={() => {onGigSelection(props.id);}}>
+        <div onClick={() => {props.onGigDetail(props.id)}}>
             <h3>{props.name}</h3>
             <p>Location: {props.location}</p>
             <hr/>
