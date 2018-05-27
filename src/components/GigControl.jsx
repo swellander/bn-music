@@ -21,7 +21,7 @@ GigControl.propTypes = {
     detailVisibleOnPage: PropTypes.bool,
     gigList: PropTypes.object,
     handleGigDetail: PropTypes.func
-}
+};
 
 
 export default GigControl;

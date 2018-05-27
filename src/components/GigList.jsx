@@ -20,7 +20,7 @@ function GigList(props) {
                     location={gig.location}
                     name={gig.name}
                     key={gigId} 
-                    id={gigId}/>
+                    id={gigId}/>;
             })}
         </div>
     );

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Gig(props) {
 
     return (
-        <div onClick={() => {props.onGigDetail(props.id)}}>
+        <div onClick={() => {props.onGigDetail(props.id);}}>
             <h3>{props.name}</h3>
             <p>Location: {props.location}</p>
             <hr/>

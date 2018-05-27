@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from './Header';
-import Container from './Container';
-import { Link } from 'react-router-dom';
+import MapContainer from './MapContainer';
+
 
 
 function GigDetail(props) {
@@ -17,7 +17,9 @@ function GigDetail(props) {
             <p>{props.selectedGig.description}</p>
             <p>{props.selectedGig.date}</p>
             <p>{props.selectedGig.time}</p>
-            <button onClick={()=> {props.hideGigDetail()}}>Back to Gig List</button>
+
+            <MapContainer />
+            <button onClick={()=> {props.hideGigDetail();}}>Back to Gig List</button>
         </div>
     );
 }
